@@ -1,0 +1,178 @@
+.base {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: inherit;
+    fill: none;
+    stroke: #06c;
+    stroke-linecap: round;
+    stroke-width: 12px;
+}
+
+#m1 {
+    animation-name: m1;
+    animation-timing-function: cubic-bezier(0.43, 0, 0.59, 1);
+    stroke-dasharray: 380;
+}
+
+@keyframes m1 {
+    0% {
+        stroke-dashoffset: 1283px;
+    }
+    100% {
+        stroke-dashoffset: 523px;
+    }
+}
+
+#m2 {
+    animation-name: m2;
+    animation-timing-function: cubic-bezier(0.43, 0, 0.59, 1);
+    stroke-dasharray: 380;
+}
+
+@keyframes m2 {
+    0% {
+        stroke-dashoffset: 1138px;
+    }
+    100% {
+        stroke-dashoffset: 378px;
+    }
+}
+
+#u {
+    animation-name: u;
+    animation-timing-function: cubic-bezier(0.14, 0, 0.83, 1);
+    stroke-dasharray: 485;
+}
+
+@keyframes u {
+    0% {
+        stroke-dashoffset: 1553px;
+    }
+    100% {
+        stroke-dashoffset: 583px;
+    }
+}
+
+#s1 {
+    animation-name: s1;
+    animation-timing-function: cubic-bezier(0.33, 0, 0.33, 1);
+    stroke-dasharray: 300;
+}
+
+@keyframes s1 {
+    0% {
+        stroke-dashoffset: 400px;
+    }
+    100% {
+        stroke-dashoffset: 1000px;
+    }
+}
+
+#s2 {
+    animation-name: s2;
+    animation-timing-function: cubic-bezier(0.52, 0, 0.12, 1);
+    stroke-dasharray: 300;
+}
+
+@keyframes s2 {
+    0% {
+        stroke-dashoffset: 952px;
+    }
+    100% {
+        stroke-dashoffset: 352px;
+    }
+}
+
+#i {
+    animation-name: i;
+    animation-timing-function: cubic-bezier(0.5, 0.805, 0.515, 0.25);
+    stroke-dasharray: 200;
+}
+
+@keyframes i {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 400px;
+    }
+}
+
+#c-1 {
+    animation-name: c-1;
+    animation-timing-function: cubic-bezier(0.19, 0, 0.55, 1);
+    stroke-dasharray: 430;
+}
+
+@keyframes c-1 {
+    0% {
+        stroke-dashoffset: 495px;
+    }
+    100% {
+        stroke-dashoffset: 1355px;
+    }
+}
+
+#a1 {
+    animation-name: a1;
+    stroke-dasharray: 485;
+}
+
+@keyframes a1 {
+    0% {
+        animation-timing-function: cubic-bezier(0.5, 0, 0.2, 0.42);
+        stroke-dashoffset: 1553px;
+    }
+    30% {
+        animation-timing-function: cubic-bezier(0.94, 0.6, 0.88, 1);
+        stroke-dashoffset: 1241px;
+    }
+    100% {
+        stroke-dashoffset: 583px;
+    }
+}
+
+#a2 {
+    animation-name: a2;
+    animation-timing-function: cubic-bezier(0.35, 0.82, 0.57, 0.18);
+    stroke-dasharray: 190;
+}
+
+@keyframes a2 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 380px;
+    }
+}
+
+#l {
+    animation-name: l;
+    animation-timing-function: cubic-bezier(0.49, 0.04, 0.5, 1);
+    stroke-dasharray: 300 790;
+}
+
+@keyframes l {
+    0% {
+        stroke-dashoffset: 1332px;
+    }
+    100% {
+        stroke-dashoffset: 242px;
+    }
+}
+
+#c-2 {
+    animation-name: c-2;
+    animation-timing-function: cubic-bezier(0.13, 0, 0.43, 1);
+    stroke-dasharray: 430;
+}
+
+@keyframes c-2 {
+    0% {
+        stroke-dashoffset: 1360px;
+    }
+    100% {
+        stroke-dashoffset: 500px;
+    }
+}

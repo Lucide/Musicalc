@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'arame';
+  src: url("../assets/fonts/arame.ttf"); }
+
+@font-face {
+  font-family: 'neon';
+  src: url("../assets/fonts/neon.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  color: lightgray;
+  font: 1rem arame;
+  cursor: default;
+  user-select: none; }
+
+canvas, svg {
+  display: block; }
+
+button {
+  border: none;
+  display: block;
+  color: inherit; }
+
+.fixed > * {
+  overflow: hidden; }
+
+.preload {
+  display: none;
+  visibility: hidden; }
+
+.loading {
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh; }
+
+.loading > svg {
+  width: 50%;
+  animation-play-state: inherit; }
+
+.bck {
+  width: 100vw;
+  height: 100vh; }
+
+.mainWrapper {
+  padding: .2%;
+  position: fixed; }
+
+main {
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  mask-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  background-color: #191919;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 3fr 2fr 8fr 3fr 1fr;
+  grid-template-areas: "h h" "c c" "t r" "i i" "f f"; }
+
+.controls, .info {
+  background-color: #282828; }
+
+.title {
+  grid-area: h; }
+
+.title > ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center; }
+
+.title > ul > li {
+  text-align: center; }
+
+.title > ul > li:nth-child(1) {
+  font-size: 2rem;
+  flex: 1; }
+
+.title > ul > li:nth-child(2) {
+  font: 9rem neon;
+  color: #06c;
+  border-color: white;
+  flex: 3;
+  border-style: none solid none solid;
+  border-width: .2rem; }
+
+.title > ul > li:nth-child(3) {
+  font-size: 2rem;
+  flex: 1; }
+
+.controls {
+  grid-area: c; }
+
+.rollTab {
+  grid-area: t;
+  position: relative; }
+
+.rollTab > .btn-wrap {
+  width: 100%;
+  height: 100%;
+  padding-top: .2rem;
+  padding-left: .2rem;
+  display: flex;
+  flex-flow: column; }
+
+.rollTab button {
+  margin-bottom: .2rem;
+  font-size: 3rem;
+  text-align: left;
+  padding-left: 1rem;
+  background-color: #191919;
+  outline: none;
+  flex: 1; }
+
+.rollTab button:hover {
+  background-color: rgba(25, 25, 25, 0.2); }
+
+.rollTab > .bar {
+  position: absolute;
+  right: 0;
+  width: .2rem;
+  height: 25%;
+  background-color: white;
+  transition: top ease .5s; }
+
+.roll {
+  grid-area: r; }
+
+.roll > div {
+  height: 100%;
+  display: flex;
+  text-align: center;
+  font-size: 10rem; }
+
+.info {
+  grid-area: i; }
+
+.footer {
+  grid-area: f; }
