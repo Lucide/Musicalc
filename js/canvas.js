@@ -333,7 +333,7 @@ var Note = /** @class */ (function () {
             this.score[i] = [new Word(0, 0, "", "arame", 20), 0, 0, 0, 0, 0, 0];
             this.score[i][0].setFill("#ffffff");
         }
-        for (var i = 0, k = 1, j = 0; i < 120; i++, j++) {
+        for (var i = 0, k = 1, j = 0; i < 120; i++ , j++) {
             if (j == k) {
                 j = 0;
                 k++;
@@ -575,7 +575,7 @@ function start() {
     cnv = {};
     list = [
         new Power(),
-        new Texture("/assets/bck/bck.png", 0, 0, 16, 9),
+        new Texture("../assets/bck/bck.png", 0, 0, 16, 9),
         new Roll(),
         new Note(),
         // new Rectangle(0, 0, 1620, 1000),
