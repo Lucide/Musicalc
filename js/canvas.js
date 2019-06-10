@@ -575,7 +575,7 @@ function start() {
     cnv = {};
     list = [
         new Power(),
-        new Texture("/assets/bck/bck.png", 0, 0, 16, 9),
+        new Texture("/Musicalc/assets/bck/bck.png", 0, 0, 16, 9),
         new Roll(),
         new Note(),
         // new Rectangle(0, 0, 1620, 1000),
