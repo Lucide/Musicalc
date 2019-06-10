@@ -1,1 +1,12 @@
-baseurl: /Musicalc
+# --- General options --- #
+
+# url is the full website URL
+# baseurl is the website's URL without the hostname
+
+# If you are building a simple GitHub user page (https://username.github.io) then use these settings:
+url: "https://lucide.github.io/Musicalc"
+baseurl: "/Musicalc"
+
+# If you are building a GitHub project page then use these settings:
+#url: "http://username.github.io/projectname"
+#baseurl: "/projectname"
